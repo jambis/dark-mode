@@ -31,7 +31,9 @@ const Chart = ({ sparklineData }) => {
       <Line type="monotone" dataKey="value" stroke="#8884d8" />
       <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
       <XAxis dataKey="date" interval={3} />
-      <YAxis />
+      <YAxis
+        label={{ value: "Dollars (USD)", angle: -90, position: "insideLeft" }}
+      />
       <Tooltip />
     </LineChart>
   );
